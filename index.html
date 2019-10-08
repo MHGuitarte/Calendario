@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calendario</title>
+  </head>
+  <body>
+    <div class="parent">
+      <h2>
+        Calendario - <span class="text-info" id="month-text"></span>
+        <span class="text-info" id="year-text"></span>
+      </h2>
+
+      <hr />
+
+      <div class="container">
+        <div id="calendar"></div>
+
+        <h3 id="back-today">
+          Hoy es: <span class="text-info" id="today-text"></span>
+        </h3>
+
+        <br />
+
+        <div class="button-controls">
+          <button name="down" id="year-down">&larr; Año</button>
+          <button name="down" id="month-down">&larr; Mes</button>
+          <button name="up" id="month-up">Mes &rarr;</button>
+          <button name="up" id="year-up">Año &rarr;</button>
+        </div>
+
+        <br />
+
+        <div class="selector-controls">
+          <select name="month" id="month-select">
+            <option selected hidden>Mes</option>
+          </select>
+          <select name="year" id="year-select">
+            <option selected hidden>Año</option>
+          </select>
+          <button name="submit" id="sumbit-date">Buscar</button>
+        </div>
+      </div>
+
+      <div class="footer">
+        <h4 class="footer-info">
+          Desarrollado por Manuel Hurtado Guitarte para 2º DAW. 2019/2020
+        </h4>
+      </div>
+      <script src="./index.js"></script>
+    </div>
+  </body>
+</html>

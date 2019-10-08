@@ -1,0 +1,119 @@
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  width: min-content;
+  margin: auto;
+  text-align: center;
+}
+
+#calendar {
+  vertical-align: middle;
+  box-shadow: -2px 2px 4px 4px rgba(180, 180, 180, 0.6);
+  display: grid;
+  grid-template-columns: 3rem 3rem 3rem 3rem 3rem 3rem 3rem;
+  grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem 3rem;
+}
+
+#sundays {
+  background-color: crimson;
+  color: white;
+  font-weight: 800;
+}
+
+.today {
+  background-color: aquamarine;
+  color: navy;
+  font-weight: 800;
+  box-shadow: 2px -2px 1px 1px rgba(60, 130, 190, 0.6);
+}
+
+.not-this-month {
+  color: grey;
+  font-style: italic;
+}
+
+span:not(.text-info) {
+  text-align: center;
+  margin: auto;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid black;
+}
+
+button {
+  text-align: center;
+  margin: 4px;
+  height: 1.5rem;
+  width: 4rem;
+  border: 0px;
+  box-shadow: 2px 2px 0px 2px rgba(230, 230, 230, 0.6);
+}
+
+button:hover {
+  border: 1px solid gray;
+  box-shadow: -2px -2px 2px 2px rgba(180, 180, 180, 0.6);
+}
+
+button:active {
+  border: 1px solid gray;
+  box-shadow: 2px 2px 0px 2px rgba(230, 230, 230, 0.6);
+}
+
+button[name="up"] {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+button[name="up"]:active {
+  background-color: darkgreen;
+  font-weight: 800;
+}
+
+button[name="down"] {
+  background-color: maroon;
+  color: white;
+}
+
+button[name="down"]:active {
+  background-color: red;
+  font-weight: 800;
+}
+
+button[name="submit"] {
+  background-color: navy;
+  color: white;
+}
+
+button[name="submit"]:active {
+  background-color: mediumblue;
+  font-weight: 800;
+}
+
+#back-today:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#month-select>option:hover,
+#year-select>option {
+  background-color: darkgreen;
+  font-weight: 800;
+  color: white;
+}
+
+.footer{
+  width: 100%;
+  height: fit-content;
+}
+
+.footer-info {
+  margin: auto;
+}
